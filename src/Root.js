@@ -32,8 +32,17 @@ const Root = () => {
       }
     }
 
-    for (let i = 0; i < 20; i++){
-      if (Math.random() <= 0.5) arr2.push(i)
+    for (let i = 0; i < 10; i++){
+      var obj = {
+        isShown : false
+      }
+
+      if (Math.random() <= 0.5) {
+        obj.isShown = true
+        obj.isSolid = Math.random() <= 0.5
+      }
+
+      arr2.push(obj)
     }
 
     setInfo(

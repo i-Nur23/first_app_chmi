@@ -8,7 +8,14 @@ import {
   Route,
   RouterProvider
 } from "react-router-dom";
-import {FirstChallenge, FirstChallengeChoice, FirstChallengeResults, WelcomePage} from "./pages";
+import {
+  FirstChallenge,
+  FirstChallengeChoice,
+  FirstChallengeResults,
+  SecondChallenge,
+  SecondChallengeChoice, SecondChallengeResults,
+  WelcomePage
+} from "./pages";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -18,6 +25,11 @@ const router = createBrowserRouter(
         <Route index element={<FirstChallenge/>}/>
         <Route path="choice" element={<FirstChallengeChoice/>}/>
         <Route path="result" element={<FirstChallengeResults/>}/>
+      </Route>
+      <Route path="second_step">
+        <Route index element={<SecondChallenge/>}/>
+        <Route path="choice" element={<SecondChallengeChoice/>}/>
+        <Route path="result" element={<SecondChallengeResults/>}/>
       </Route>
     </Route>
   )

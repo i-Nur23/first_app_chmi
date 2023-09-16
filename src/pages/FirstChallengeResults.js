@@ -1,5 +1,5 @@
-import {useLocation} from "react-router-dom";
-import {useContext, useState} from "react";
+import {Link, useLocation} from "react-router-dom";
+import {useContext, useEffect, useState} from "react";
 import {UserContext} from "../Root";
 
 export const FirstChallengeResults = () => {
@@ -16,15 +16,19 @@ export const FirstChallengeResults = () => {
 
     var mistake = {number : number, right: right, wrong: wrong}
 
-    /*setInfo(
-      {
-        ...info,
-        firstExperimentMistakes : [...info.firstExperimentMistakes, mistake]
-      }
-    )*/
-
     mistakes.push(mistake)
   }
+
+  useEffect(() => {
+      return(() => {
+        setInfo(
+        {
+          ...info,
+          firstExperimentMistakes : [...info.firstExperimentMistakes, mistakes]
+        }
+        )
+      })
+  },[])
 
   return (
     <div className="flex flex-col gap-3 w-96">
@@ -58,9 +62,11 @@ export const FirstChallengeResults = () => {
           </tbody>
         </table>
       </div>
-      <button type="button">
-        Следующий тест
-      </button>
+      <Link to="/second_step">
+        <button type="button">
+          Следующий тест
+        </button>
+      </Link>
     </div>
   )
 }

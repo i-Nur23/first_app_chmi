@@ -27,18 +27,18 @@ export const FirstChallengeChoice = () => {
         </thead>
         <tbody>
         {
-          checks.map((check, upper_index) => (
+          checks.map((check, index) => (
             <tr>
-              <td className="border p-3 text-xl font-semibold">{upper_index}</td>
+              <td className="border p-3 text-xl font-semibold">{index}</td>
               {
                 Object.values(Styles).map(style =>
                   (
                     <td
                       className="border p-3"
-                      onClick={e => changeCheckState(upper_index, style)}
+                      onClick={e => changeCheckState(index, style)}
                     >
                       {
-                        checks[upper_index] === style
+                        checks[index] === style
                           ?
                           <svg
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
