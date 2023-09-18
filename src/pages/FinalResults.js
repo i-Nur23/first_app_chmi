@@ -41,7 +41,7 @@ export const FinalResults = () => {
 
   return(
     <div>
-      <h1 className="mb-4">{info.name}, Вы звершили тестирование!</h1>
+      <h1 className="mb-4">{info.name}, Вы завершили тестирование!</h1>
       <h2 className="mb-3">Первый тест</h2>
       <div className="flex flex-col gap-3">
         <ResultRow
