@@ -9,6 +9,7 @@ import {
   RouterProvider
 } from "react-router-dom";
 import {
+  FinalResults,
   FirstChallenge,
   FirstChallengeChoice,
   FirstChallengeResults,
@@ -31,6 +32,7 @@ const router = createBrowserRouter(
         <Route path="choice" element={<SecondChallengeChoice/>}/>
         <Route path="result" element={<SecondChallengeResults/>}/>
       </Route>
+      <Route path="final" element={<FinalResults/>}/>
     </Route>
   )
 )

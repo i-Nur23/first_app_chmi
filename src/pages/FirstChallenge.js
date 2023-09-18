@@ -19,7 +19,7 @@ export const FirstChallenge = () => {
 
     setTimeout(() => {
         navigate("choice")
-      }, 8000
+      }, 10000
     )
 
     return () => {
@@ -34,7 +34,7 @@ export const FirstChallenge = () => {
         <p>Запомните какие из них написаны пунктиром, а какие курсивом</p>
         <div className="flex gap-1 justify-center">
           <p>Цифры будут видны в течении</p>
-          <strong>3 секунд</strong>
+          <strong>5 секунд</strong>
         </div>
       </div>
     </div>

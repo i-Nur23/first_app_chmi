@@ -21,7 +21,7 @@ const Root = () => {
 
     for (let i = 0; i < 10; i++){
 
-      if (Math.random() <= 0.5) {
+      if (Math.random() <= 0.6) {
         if (Math.random() <= 0.5) {
           arr1.push(Styles.DASHED)
         } else {
@@ -37,7 +37,7 @@ const Root = () => {
         isShown : false
       }
 
-      if (Math.random() <= 0.5) {
+      if (Math.random() <= 0.6) {
         obj.isShown = true
         obj.isSolid = Math.random() <= 0.5
       }

@@ -24,7 +24,7 @@ export const FirstChallengeResults = () => {
         setInfo(
         {
           ...info,
-          firstExperimentMistakes : [...info.firstExperimentMistakes, mistakes]
+          firstExperimentMistakes : mistakes
         }
         )
       })

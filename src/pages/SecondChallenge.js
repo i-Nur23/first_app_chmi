@@ -19,7 +19,7 @@ export const SecondChallenge = () => {
 
     setTimeout(() => {
         navigate("choice")
-      }, 8000
+      }, 10000
     )
 
     return () => {
@@ -34,7 +34,7 @@ export const SecondChallenge = () => {
         <p>Вам необходимо будет запомнить их</p>
         <div className="flex gap-1 justify-center">
           <p>Пиктограммы будут видны в течении</p>
-          <strong>3 секунд</strong>
+          <strong>5 секунд</strong>
         </div>
       </div>
     </div>

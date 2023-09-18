@@ -5,6 +5,7 @@ import {FirstChallengeResults} from "./FirstChallengeResults";
 import {SecondChallenge} from "./SecondChallenge";
 import {SecondChallengeChoice} from "./SecondChallengeChoice";
 import {SecondChallengeResults} from "./SecondChallengeResults";
+import {FinalResults} from "./FinalResults";
 
 export {
   WelcomePage,
@@ -13,5 +14,6 @@ export {
   FirstChallengeResults,
   SecondChallenge,
   SecondChallengeResults,
-  SecondChallengeChoice
+  SecondChallengeChoice,
+  FinalResults
 }

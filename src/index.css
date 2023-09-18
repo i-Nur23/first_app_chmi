@@ -21,3 +21,11 @@ input[type="text"] {
 button[type="submit"], button[type="button"] {
     @apply bg-gray-100 w-full p-4 hover:bg-gray-200 rounded-lg ease-in-out duration-100
 }
+
+h1 {
+    @apply text-3xl
+}
+
+h2 {
+    @apply text-2xl
+}

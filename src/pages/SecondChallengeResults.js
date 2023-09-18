@@ -1,4 +1,4 @@
-import {useLocation} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 import {useContext, useEffect, useState} from "react";
 import {UserContext} from "../Root";
 
@@ -20,7 +20,7 @@ export const SecondChallengeResults = () => {
   }
 
   function save() {
-    //TODO
+
   }
 
   useEffect(() => {
@@ -28,7 +28,7 @@ export const SecondChallengeResults = () => {
         setInfo(
         {
           ...info,
-          secondExperimentMistakes : [...info.secondExperimentMistakes, mistakes]
+          secondExperimentMistakes : mistakes
         }
         )
       })
@@ -52,7 +52,7 @@ export const SecondChallengeResults = () => {
 
               if (answer === info.secondExperiment[index].isShown) return null
 
-              addMistake(index, info.firstExperiment[index].isShown, answer, info.firstExperiment[index].isSolid)
+              addMistake(index, info.secondExperiment[index].isShown, answer, info.secondExperiment[index].isSolid)
 
               return (
                 <tr>
@@ -76,9 +76,11 @@ export const SecondChallengeResults = () => {
           </tbody>
         </table>
       </div>
-      <button type="button" onClick={e => save()}>
-        Завершить тестирование
-      </button>
+      <Link to="/final">
+        <button type="button" onClick={e => save()}>
+          Завершить тестирование
+        </button>
+      </Link>
     </div>
   )
 }
